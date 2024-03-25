@@ -34,12 +34,19 @@ body {
 }
 
 header {
+  position: sticky;
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
+}
+
+.sticky-position {
+  position: sticky;
+  top: 0;
+  z-Index: 10000;
 }
 
 nav {
@@ -83,7 +90,7 @@ button {
   font-size: 18px;
   padding: 15px 30px;
   margin: 10px;
-
+  color: white;
 }
 
 button:hover {
@@ -92,7 +99,7 @@ button:hover {
 
 .transition-line {
   position: absolute;
-  top: 50%;
+  top: 95vh;
   left: 0;
   width: 0;
   height: 2px;
@@ -121,7 +128,7 @@ button:hover {
 
 @keyframes expandLine {
   100% {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -139,8 +146,14 @@ button:hover {
   float: right;
 }
 
-.section {
+section {
   height: 100vh;
 }
 
+.section-container {
+  min-height: 100vh;
+}
 
+.button-smaller {
+  animation: fadeIn 1s ease-out;
+}

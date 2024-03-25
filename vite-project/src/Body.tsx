@@ -5,9 +5,8 @@ const Body: React.FC = () => {
         <div className='body-container'>
           <h1 className='title'>¡Hola, soy Aitor!</h1>
           <h1 className='title'>Bienvenido a mi rincón creativo</h1>
-          <div className="transition-line">
-            <button className="button-line">CV</button>
-          </div>
+          <button className="button-smaller">CV</button>
+          <div className="transition-line"></div>
           
         </div>
         
