@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.body-container {
+  margin: 10rem;
+  text-align: left;
+}
+
+.container {
+  width: 10%;
+  margin: 0 auto;
+  float: right;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  animation: fadeIn 1s ease-out;
+}
+
+header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #2a2a2a;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+}
+
+button {
+  background-color: #3A3153;
+  font-family: 'Playfair Display', serif;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 10px;
+
+}
+
+button:hover {
+  background-color: #5F43B2;
+}
+
+.transition-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: expandLine 1.5s ease forwards;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.transition-line::after {
+}
+
+@keyframes aparecerBoton {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expandLine {
+  100% {
+    width: 30%;
+  }
+}
+
+.donut-animation {
+  display: none;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  float: right;
+}
+
+.section {
+  height: 100vh;
+}
+
+

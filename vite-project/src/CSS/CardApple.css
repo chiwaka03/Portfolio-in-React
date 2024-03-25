@@ -1,0 +1,57 @@
+.ventana-apple {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .barra-superior {
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .botones {
+    display: flex;
+  }
+  
+  .boton {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .boton-rojo {
+    background-color: #f74f4f;
+  }
+  
+  .boton-amarillo {
+    background-color: #facd58;
+  }
+  
+  .boton-verde {
+    background-color: #58c049;
+  }
+  
+  .titulo {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .contenido {
+    padding: 20px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
