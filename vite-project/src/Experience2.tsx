@@ -3,10 +3,10 @@ import React from 'react'
 const Experience: React.FC = () => {
     return (
 
-        <a href="https://www.vetito.xyz/" target="_blank" className="card-link">
+        <a href="https://fidenet.net/" target="_blank" className="card-link">
         <div className="card">
           <div className="card-overlay">
-            <h2 className="card-name">Vetito</h2>
+            <h2 className="card-name">Fidenet</h2>
             <span className="card-time">Dic 2023 - Enero 2024</span>
             <span className='card-text'>
             En Vetito, lideré proyectos de rediseño de páginas web en Wordpress, 
