@@ -24,6 +24,12 @@ body {
   background-color: #000;
 }
 
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
 
 .body-container {
   margin-top: 10rem;
@@ -50,83 +56,14 @@ body {
   }
 }
 
-header {
-  position: sticky;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-.sticky-position {
-  position: sticky;
-  top: 0;
-  z-Index: 10000;
-}
-
-nav {
-  background-color: #2a2a2a;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li {
-  text-decoration: none;
-  color: #fff;
-}
-
 a {
   color: #d8b4ff;
 }
 
-button:hover {
+.button-smaller:hover {
   background-color: #5F43B2;
 }
 
-.transition-line {
-  position: absolute;
-  top: 95vh;
-  left: 0;
-  width: 10%;
-  height: 2px;
-  background-color: white;
-  border-radius: 50%;
-  transform: translateY(-50%) translateX(-5%) scale(0.9);
-  animation: expandLine 1.5s ease forwards;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.transition-line::after {
-}
-
-@keyframes aparecerBoton {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
 @keyframes expandLine {
   100% {
@@ -157,6 +94,15 @@ section {
   color: white;
 }
 
+.button-smaller:not(:first-child) {
+  margin-left: 20px;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 10vh;
+}
+
 .text-alchemist {
   width: 50%;
 }
@@ -170,7 +116,6 @@ section {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 80%; 
-  
 }
 
 .half-1 {
@@ -197,6 +142,10 @@ section {
   font-size: 24px;
 }
 
+.card-overlay h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
 
 .spacer {
   margin-bottom: 50%;
@@ -266,7 +215,7 @@ section {
   margin-left: 11rem;
 }
 
-.card-link {
+.no-style {
   text-decoration: none;
   color: inherit;
 }

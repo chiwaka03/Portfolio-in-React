@@ -2,8 +2,10 @@ import './CSS/styles.css'
 import Body from './Body'
 import DonutAnimation from './DonutAnimation.tsx';
 import Experience from './Experience.tsx';
-import AboutMe from './AboutMe.tsx';
 import Experience2 from './Experience2.tsx';
+import Experience3 from './Experience3.tsx';
+import AboutMe from './AboutMe.tsx';
+import SocialButtons from './SocialButtons.tsx';
 
 const App: React.FC = () => {
   return (
@@ -12,17 +14,20 @@ const App: React.FC = () => {
         <div>
           <Body />
         </div>
-      <div className="transition-line"></div> 
       </div>
-      
+      <SocialButtons />
       <div className='half-2'>
         <div>
           <AboutMe />
         </div>
         <div className='spacer'></div>
         <Experience />
+
         <div className='spacer-experience'></div>
         <Experience2 />
+
+        <div className='spacer-experience'></div>
+        <Experience3 />
         <section></section>
       </div>
     </div>
