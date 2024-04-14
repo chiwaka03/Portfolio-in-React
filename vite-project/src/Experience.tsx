@@ -3,8 +3,9 @@ import React from 'react'
 const Experience: React.FC = () => {
     return (
 
-        <a href="https://www.vetito.xyz/" target="_blank" className="no-style">
+       
         <div className="card">
+          <a href="https://www.vetito.xyz/" target="_blank" className="no-style">
           <div className="card-overlay">
             <h3 className="card-name">Developer - Vetito</h3>
             <span className="card-time">Dic 2023 - Enero 2024</span>
@@ -15,8 +16,8 @@ const Experience: React.FC = () => {
             adaptando temas y plugins para lograr los objetivos de diseño y funcionalidad.
             </span>
           </div>
+          </a>
         </div>
-        </a>
 
         
       );

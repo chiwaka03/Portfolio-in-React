@@ -31,6 +31,10 @@ h2 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
 .body-container {
   margin-top: 10rem;
 }
@@ -101,6 +105,7 @@ section {
 .social-container {
   position: fixed;
   bottom: 10vh;
+  z-index: 1000;
 }
 
 .text-alchemist {
@@ -129,12 +134,13 @@ section {
 .half-2 {
   width: 60%;
   overflow-y: auto;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 .card-overlay {
   display: flex;
   flex-direction: column;
+  pointer-events: none; //al enlace no le afecte el padding
 }
 
 .card-overlay h2 {
@@ -199,23 +205,65 @@ section {
 }
 
 .card-time {
+  position: relative;
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+}
+
+.card-name {
   position: absolute;
   top: 10px;
   left: 10px;
 }
 
-.card-name {
-  position: absolute;
-  left: 12rem;
-  top: 10px; 
-}
-
 .card-text {
-  margin-top: 20px;
-  margin-left: 11rem;
+  margin-left: 0;
+  margin-top: 1rem;
 }
 
 .no-style {
   text-decoration: none;
   color: inherit;
+}
+
+/*
+  RESPONSIVE
+*/
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .first-part {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
+  }
+  .half-1 {
+    width: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    left: 0%;
+  }
+  .text-alchemist {
+    width: 20rem;
+  }
+  .half-2 {
+    width: 95%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .half2-container {
+    margin-left: 0;
+  }
+  .card {
+    max-width: 100%;
+    margin: 0;
+    
+  }
 }
