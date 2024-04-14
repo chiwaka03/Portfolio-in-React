@@ -1,26 +1,37 @@
 import './CSS/styles.css'
-import Header from './Header.tsx'
 import Body from './Body'
 import DonutAnimation from './DonutAnimation.tsx';
-import CardApple from './CardApple.tsx'
 import Experience from './Experience.tsx';
+import Experience2 from './Experience2.tsx';
+import Experience3 from './Experience3.tsx';
+import AboutMe from './AboutMe.tsx';
+import SocialButtons from './SocialButtons.tsx';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <section>
-      <div className='sticky-position'>
-        <Header />
+    <div className='first-part'>
+      <div className='half-1'>
+        <div>
+          <Body />
+        </div>
       </div>
-      <Body />
-      <CardApple /> 
-      </section>
-      
-      <section>
-        <Experience/>
-      </section>
+      <SocialButtons />
+      <div className='half-2'>
+        <div>
+          <AboutMe />
+        </div>
+        <div className='spacer'></div>
+        <Experience />
 
+        <div className='spacer-experience'></div>
+        <Experience2 />
+
+        <div className='spacer-experience'></div>
+        <Experience3 />
+        <section></section>
+      </div>
     </div>
+    
   );
 };
 
