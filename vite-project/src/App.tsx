@@ -6,6 +6,9 @@ import Experience2 from './Experience2.tsx';
 import Experience3 from './Experience3.tsx';
 import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';
+import PersonalProjects from './PersonalProjects.tsx';
+import PersonalProjects2 from './PersonalProjects2.tsx';
+import PortfolioExplain from './PortfolioExplain.tsx';
 
 const App: React.FC = () => {
   return (
@@ -28,7 +31,14 @@ const App: React.FC = () => {
 
         <div className='spacer-experience'></div>
         <Experience3 />
-        <section></section>
+        
+        <div className='spacer'></div>
+        <PersonalProjects />
+        <div className='spacer-experience'></div>
+        <PersonalProjects2/>
+        <div className='spacer-experience'></div>
+        <PortfolioExplain/> 
+
       </div>
     </div>
     
