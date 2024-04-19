@@ -1,6 +1,6 @@
 # Mi Portfolio en React
 
-Este es el repositorio de mi portfolio personal desarrollado utilizando React. Aquí presento mis proyectos, habilidades y experiencia en el desarrollo web.
+Este es el repositorio de mi portfolio personal desarrollado en React. Aquí presento mis proyectos, habilidades y experiencia en el desarrollo.
 
 ## Demo
 
@@ -25,7 +25,7 @@ Puedes ver una demostración de mi portfolio en vivo [aquí](#) (agregar el enla
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias usando `npm install`.
 3. Inicia el servidor de desarrollo con `npm run dev`.
-4. Abre [http://localhost:5173](http://localhost:3000) en tu navegador.
+4. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
 ## Contribución
 
