@@ -7,10 +7,13 @@ const PersonalProjects: React.FC = () => {
           <a href="https://github.com/chiwaka03/Flutter_app" target="_blank" className="no-style">
             <div className='text-project-card'>
               <h3>Python (flask) <span>&#8599;</span></h3>
-              <p>En Vetito, lideré proyectos de rediseño de páginas web en Wordpress, 
-              enfocándome en mejorar la estética y la usabilidad. 
-              Me especialicé en el desarrollo frontend, 
-              adaptando temas y plugins para lograr los objetivos de diseño y funcionalidad.</p>
+              <p>El proyecto desarrollado con Flask en Python se centró en la seguridad,
+                utilizando diversas herramientas y bibliotecas para garantizar la
+                protección de los datos y la autenticación de los usuarios.
+                Se emplearon otras bibliotecas como Flask-Bcrypt para el cifrado
+                de contraseñas y Flask-WTF para la validación de formularios.
+                Se implementó un sistema de gestión de sesiones seguro utilizando
+                SecureCookieSessionInterface.</p>
             </div>
         </a>
       </div>
