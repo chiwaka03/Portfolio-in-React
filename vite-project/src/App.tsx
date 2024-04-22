@@ -13,8 +13,9 @@ const App: React.FC = () => {
         <div>
           <Body />
         </div>
+        <SocialButtons />
       </div>
-      <SocialButtons />
+      
       <div className='half-2'>
         <div>
           <AboutMe />

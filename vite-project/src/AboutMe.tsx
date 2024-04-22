@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
 
             <p>
                 A día de hoy estoy centrado en ser un Backend Developer. Algunas veces
-                hago proyectos para salir de mi zona de comfort, como por ejemplo: <a href='https://chiwaka03.itch.io/peraminal'>PeraMinal. </a>
+                hago proyectos para salir de mi zona de comfort, como por ejemplo: <a href='https://chiwaka03.itch.io/peraminal' target='_blank'>PeraMinal</a>.
                 Es un juego de terror, en alrededor de 2 meses aprendí algo básico de modelaje 3D y Unreal Engine 5, y me aventuré en este proyecto.
                 Entre otros proyectos también aprendí desde cero flutter (dart) y cree una aplicación móvil multiplataforma.
             </p>
