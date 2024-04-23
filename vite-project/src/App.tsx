@@ -1,6 +1,5 @@
 import './CSS/styles.css'
 import Body from './Body'
-import DonutAnimation from './DonutAnimation.tsx';
 import Experience from './Experience.tsx';
 import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';

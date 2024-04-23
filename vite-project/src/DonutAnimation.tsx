@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 // Hecho por a1k0n, adaptado por mí
 // https://www.a1k0n.net/2011/07/20/donut-math.html
@@ -17,7 +17,7 @@ const DonutAnimation = () => {
     const intervalId = setInterval(() => {
       z += 0.07;
       y += 0.03;
-      const a = [...new Array(x)].map((a, r) => r % 80 === 79 ? "\n" : " ");
+      const a = [...new Array(x)].map((r) => r % 80 === 79 ? "\n" : " ");
       const r = new Array(x).fill(0);
       const t = Math.cos(z), e = Math.sin(z), n = Math.cos(y), o = Math.sin(y);
       for (let s = 0; s < 6.28; s += 0.07) {
