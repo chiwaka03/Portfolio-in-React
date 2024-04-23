@@ -10,51 +10,45 @@ const App: React.FC = () => {
   return (
     <div className='first-part'>
       <div className='half-1'>
-        <div>
           <Body />
-        </div>
         <SocialButtons />
       </div>
       
       <div className='half-2'>
-        <div>
           <AboutMe />
+
+        <div className='space-between'>
+          <Experience
+            title="Experiencia Laboral"
+            link="https://www.vetito.xyz/"
+            position="Developer - Vetito"
+            date="Dic 2023 - Enero 2024"
+            description="En Vetito, lideré proyectos de rediseño de páginas web en Wordpress,
+            enfocándome en mejorar la estética y la usabilidad. Me especialicé en el desarrollo
+            frontend, adaptando temas y plugins para lograr los objetivos de diseño y funcionalidad."
+          />
+          <Experience
+            link="https://fidenet.net/"
+            position="FrontEnd Developer - Fidenet"
+            date="Mayo - Sept 2023"
+            description="En Fidenet, lideré proyectos de implementación y personalización
+            de páginas web, utilizando el framework de Sylius, Wordpress, 
+            así como HTML y CSS. Me enfoqué en mejorar la estética y la 
+            usabilidad de los sitios web, siguiendo diseños previamente
+            establecidos por otros. Mejoré mis habilidades en el desarrollo frontend."
+          />
+          <Experience
+            link="https://www.volkswagenvasa.com/"
+            position="IT Helper - Vasa Taldea"
+            date="Marzo - Mayo 2021"
+            description="En Vasa Taldea, contribuí brindando soporte integral en la gestión de documentos, 
+            realizando copias físicas y almacenamiento en la nube. Además, 
+            participé en labores de mantenimiento de equipos para garantizar su óptimo funcionamiento.
+            Esta experiencia me permitió fortalecer mis habilidades en gestión documental y mantenimiento de sistemas."
+          />
         </div>
-        <div className='spacer'></div>
-        <Experience
-          title="Experiencia Laboral"
-          link="https://www.vetito.xyz/"
-          position="Developer - Vetito"
-          date="Dic 2023 - Enero 2024"
-          description="En Vetito, lideré proyectos de rediseño de páginas web en Wordpress,
-          enfocándome en mejorar la estética y la usabilidad. Me especialicé en el desarrollo
-          frontend, adaptando temas y plugins para lograr los objetivos de diseño y funcionalidad."
-        />
 
-        <div className='spacer-experience'></div>
-        <Experience
-          link="https://fidenet.net/"
-          position="FrontEnd Developer - Fidenet"
-          date="Mayo - Sept 2023"
-          description="En Fidenet, lideré proyectos de implementación y personalización
-          de páginas web, utilizando el framework de Sylius, Wordpress, 
-          así como HTML y CSS. Me enfoqué en mejorar la estética y la 
-          usabilidad de los sitios web, siguiendo diseños previamente
-          establecidos por otros. Mejoré mis habilidades en el desarrollo frontend."
-        />
-
-        <div className='spacer-experience'></div>
-        <Experience
-          link="https://www.volkswagenvasa.com/"
-          position="IT Helper - Vasa Taldea"
-          date="Marzo - Mayo 2021"
-          description="En Vasa Taldea, contribuí brindando soporte integral en la gestión de documentos, 
-          realizando copias físicas y almacenamiento en la nube. Además, 
-          participé en labores de mantenimiento de equipos para garantizar su óptimo funcionamiento.
-          Esta experiencia me permitió fortalecer mis habilidades en gestión documental y mantenimiento de sistemas."
-        />
-        
-        <div className='spacer'></div>
+        <div className='space-between'>
         <Experience
           title='Proyectos Personales'
           link="https://github.com/chiwaka03/Flutter_app"
@@ -64,7 +58,6 @@ const App: React.FC = () => {
           productos deseados con una sola búsqueda, siendo una herramienta indispensable
           para quienes buscan productos de segunda mano con facilidad y rapidez."
         />
-        <div className='spacer-experience'></div>
         <Experience
           link="https://github.com/chiwaka03/Login-Page"
           position="Python (flask)"
@@ -76,7 +69,7 @@ const App: React.FC = () => {
           Se implementó un sistema de gestión de sesiones seguro utilizando
           SecureCookieSessionInterface."
         />
-        <div className='spacer-experience'></div>
+        </div>
         <PortfolioExplain/> 
 
       </div>
