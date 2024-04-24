@@ -4,9 +4,12 @@ const PortfolioExplain: React.FC = () => {
     return (
 
         <div className='final-text'>
-            Este proyecto se creó utilizando React y se ha desplegado en Vercel.
-            Utiliza la tipografía Playfair Display y el código se desarrolló
-            en Visual Studio Code. Para los estilos, se empleó CSS sin librerías adicionales.
+            Este proyecto se creó utilizando <a href='https://es.react.dev/' target='_blank'>React</a> y se ha desplegado en 
+            <a href='https://vercel.com/' target='_blank'> Vercel</a>.
+            Utiliza la tipografía<a href='https://fonts.google.com/specimen/Playfair+Display' target='_blank'> Playfair Display </a>
+             y el código se desarrolló en
+             <a href='https://code.visualstudio.com/' target='_blank'> Visual Studio Code</a>.
+              Para los estilos, se empleó CSS sin librerías adicionales.
         </div>
     );
 };
