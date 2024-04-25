@@ -1,0 +1,21 @@
+/* CSS/Carousel.css */
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tech-stack-section {
+    margin-bottom: 20px;
+  }
+  
+  .tech-stack-slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tech-stack-slide {
+    margin: 0 10px; /* Ajusta el espacio entre los iconos */
+  }
+  

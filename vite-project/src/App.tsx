@@ -4,6 +4,7 @@ import Experience from './Experience.tsx';
 import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
+import TechStackCarousel from './TechStack.tsx';
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const App: React.FC = () => {
       
       <div className='half-2'>
           <AboutMe />
-
+          <TechStackCarousel />
         <div className='space-between'>
           <Experience
             title="Experiencia Laboral"
