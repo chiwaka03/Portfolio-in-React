@@ -6,10 +6,6 @@ import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
 import SyliusImage from './assets/sylius.svg'; 
 
-interface ImageProps {
-  src: string;
-  alt?: string; // Agrega una propiedad opcional para el atributo alt
-}
 
 const App: React.FC = () => {
   const generateAlt = (src: string): string => {
