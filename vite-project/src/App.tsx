@@ -4,6 +4,7 @@ import Experience from './Experience.tsx';
 import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
+import SyliusImage from './assets/sylius.svg'; 
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,6 @@ const App: React.FC = () => {
       
       <div className='half-2'>
           <AboutMe />
-
         <div className='space-between'>
           <Experience
             title="Experiencia Laboral"
@@ -25,16 +25,30 @@ const App: React.FC = () => {
             description="En Vetito, lideré proyectos de rediseño de páginas web en Wordpress,
             enfocándome en mejorar la estética y la usabilidad. Me especialicé en el desarrollo
             frontend, adaptando temas y plugins para lograr los objetivos de diseño y funcionalidad."
+            image={[
+              { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg"},
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+            ]}
           />
           <Experience
             link="https://fidenet.net/"
             position="FrontEnd Developer - Fidenet"
             date="Mayo - Sept 2023"
-            description="En Fidenet, lideré proyectos de implementación y personalización
+            description="En Fidenet, trabajé en proyectos de implementación y personalización
             de páginas web, utilizando el framework de Sylius, Wordpress, 
-            así como HTML y CSS. Me enfoqué en mejorar la estética y la 
+            así como HTML y CSS. Me enfoqué en mejorar la seguridad y la 
             usabilidad de los sitios web, siguiendo diseños previamente
             establecidos por otros. Mejoré mis habilidades en el desarrollo frontend."
+            image={[
+              { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg"},
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' },
+              { src:  SyliusImage},
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+            ]}
           />
           <Experience
             link="https://www.volkswagenvasa.com/"
@@ -44,6 +58,7 @@ const App: React.FC = () => {
             realizando copias físicas y almacenamiento en la nube. Además, 
             participé en labores de mantenimiento de equipos para garantizar su óptimo funcionamiento.
             Esta experiencia me permitió fortalecer mis habilidades en gestión documental y mantenimiento de sistemas."
+            
           />
         </div>
 
@@ -56,6 +71,11 @@ const App: React.FC = () => {
           Con un enfoque en la eficiencia y la comodidad, Thrift3r ahorra tiempo al encontrar
           productos deseados con una sola búsqueda, siendo una herramienta indispensable
           para quienes buscan productos de segunda mano con facilidad y rapidez."
+          image={[
+            { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg' },
+            { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg' },
+            { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg' },
+          ]}
         />
         <Experience
           link="https://github.com/chiwaka03/Login-Page"
@@ -67,6 +87,10 @@ const App: React.FC = () => {
           de contraseñas y Flask-WTF para la validación de formularios.
           Se implementó un sistema de gestión de sesiones seguro utilizando
           SecureCookieSessionInterface."
+          image={[
+            { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
+            { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg' },
+          ]}
         />
         </div>
         <PortfolioExplain/> 
