@@ -6,7 +6,13 @@ import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
 import SyliusImage from './assets/sylius.svg'; 
 
+
 const App: React.FC = () => {
+  const generateAlt = (src: string): string => {
+    const filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
+    return filename.replace(/[-_]/g, ' ');
+  };
+
   return (
     <div className='first-part'>
       <div className='half-1'>
@@ -30,7 +36,7 @@ const App: React.FC = () => {
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
-            ]}
+            ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
           />
           <Experience
             link="https://fidenet.net/"
@@ -48,7 +54,7 @@ const App: React.FC = () => {
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' },
               { src:  SyliusImage},
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
-            ]}
+            ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
           />
           <Experience
             link="https://www.volkswagenvasa.com/"
@@ -75,7 +81,7 @@ const App: React.FC = () => {
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg' },
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg' },
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg' },
-          ]}
+          ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
         />
         <Experience
           link="https://github.com/chiwaka03/Login-Page"
@@ -90,7 +96,7 @@ const App: React.FC = () => {
           image={[
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg' },
-          ]}
+          ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
         />
         </div>
         <PortfolioExplain/> 
