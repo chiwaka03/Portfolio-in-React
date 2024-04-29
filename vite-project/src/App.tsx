@@ -5,6 +5,7 @@ import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
 import SyliusImage from './assets/sylius.svg'; 
+import Marquee from './Marquee.tsx';
 
 
 const App: React.FC = () => {
@@ -67,7 +68,7 @@ const App: React.FC = () => {
             
           />
         </div>
-
+          <Marquee />
         <div className='space-between'>
         <Experience
           title='Proyectos Personales'

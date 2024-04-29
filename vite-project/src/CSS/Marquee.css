@@ -1,0 +1,22 @@
+.marquee-container {
+    width: 70%;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 10s linear infinite; /* Ajusta la velocidad y duración */
+}
+
+.marquee img {
+    margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
