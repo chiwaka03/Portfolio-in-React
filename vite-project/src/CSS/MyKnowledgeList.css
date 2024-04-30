@@ -1,0 +1,21 @@
+.knowledge-list-container {
+  background-color: #d8b4ff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10%;
+  align-items: center;
+  display: flex; /* Hacer que el contenedor use flexbox */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.knowledge-container {
+  margin-top: 30%;
+  margin-left: 4rem;
+}
+
+.knowledge-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
