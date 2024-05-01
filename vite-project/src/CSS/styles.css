@@ -189,6 +189,10 @@ a {
   padding-top: 2rem;
 }
 
+.display-text {
+  display: none;
+}
+
 /* Responsive */
 @media screen and (max-width: 1024px) {
   h1 {
@@ -220,7 +224,7 @@ a {
   }
 
   .half2-container {
-    margin-top: 5rem;
+    margin-top: 0rem;
     margin-left: 0;
   }
 
@@ -246,5 +250,8 @@ a {
     position: static;
     margin-top: 3rem;
     margin-bottom: 4rem;
+  }
+  .display-text {
+    display: block;
   }
 }

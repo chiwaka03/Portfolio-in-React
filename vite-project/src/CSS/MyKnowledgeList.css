@@ -19,3 +19,9 @@
   height: 40px;
   margin: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+  .knowledge-container {
+    margin-left: 0rem;
+  }
+}
