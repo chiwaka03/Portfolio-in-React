@@ -5,6 +5,7 @@ import AboutMe from './AboutMe.tsx';
 import SocialButtons from './SocialButtons.tsx';
 import PortfolioExplain from './PortfolioExplain.tsx';
 import SyliusImage from './assets/sylius.svg'; 
+import MyKnoledgeList from './MyKnowledgeList.tsx';
 
 
 const App: React.FC = () => {
@@ -36,6 +37,7 @@ const App: React.FC = () => {
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg' },
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+              { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' },
             ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
           />
           <Experience
@@ -67,7 +69,7 @@ const App: React.FC = () => {
             
           />
         </div>
-
+          <MyKnoledgeList />
         <div className='space-between'>
         <Experience
           title='Proyectos Personales'

@@ -3,6 +3,7 @@ import React from 'react'
 const AboutMe: React.FC = () => {
     return (
         <div className='half2-container'>
+            <h2 className='centered-text display-text'>Sobre mí</h2>
             <p>
                 Mi primer acercamiento al mundo de la programación fue
                 en 2021, mi manera de entrar a este mundo fue por el camino
