@@ -8,6 +8,7 @@ const MyKnowledgeList: React.FC = () => {
             <h2 className='centered-text'>Mis conocimientos</h2>
             <div className='knowledge-list-container'>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" className="knowledge-icon" alt="Java"  />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" className="knowledge-icon" alt="Maven"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" className="knowledge-icon" alt="Python" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" className="knowledge-icon" alt="Flask"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" className="knowledge-icon" alt="Flutter"  />
