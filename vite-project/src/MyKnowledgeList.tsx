@@ -10,8 +10,6 @@ const MyKnowledgeList: React.FC = () => {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" className="knowledge-icon" alt="Java"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" className="knowledge-icon" alt="Maven"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" className="knowledge-icon" alt="Python" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" className="knowledge-icon" alt="Flask"  />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" className="knowledge-icon" alt="Flutter"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" className="knowledge-icon" alt="WordPress"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" className="knowledge-icon" alt="MySQL"  />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unrealengine/unrealengine-original.svg" className="knowledge-icon" alt="Unreal Engine"  />
