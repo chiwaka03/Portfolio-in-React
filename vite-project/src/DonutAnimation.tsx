@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 const DonutAnimation = () => {
   useEffect(() => {
     const pre = document.createElement("pre");
-    pre.style.maxWidth = '400px'; // Establece el ancho máximo
-    pre.style.maxHeight = '400px'; // Establece la altura máxima
+    pre.style.maxWidth = '400px';
+    pre.style.maxHeight = '400px'; 
     pre.style.position = 'fixed';
     pre.style.top = '50%';
     pre.style.right = '25rem';

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './CSS/styles.css'
 import Body from './Body'
 import Experience from './Experience.tsx';
@@ -9,15 +10,17 @@ import MyKnoledgeList from './MyKnowledgeList.tsx';
 
 
 const App: React.FC = () => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
   const generateAlt = (src: string): string => {
     const filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
     return filename.replace(/[-_]/g, ' ');
   };
 
   return (
-    <div className='first-part'>
+    <div className="first-part">
       <div className='half-1'>
-          <Body />
+        <Body />
         <SocialButtons />
       </div>
       
@@ -39,6 +42,8 @@ const App: React.FC = () => {
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg' },
             ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
           <Experience
             link="https://fidenet.net/"
@@ -57,6 +62,8 @@ const App: React.FC = () => {
               { src:  SyliusImage},
               { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
             ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
           <Experience
             link="https://www.volkswagenvasa.com/"
@@ -66,7 +73,8 @@ const App: React.FC = () => {
             realizando copias físicas y almacenamiento en la nube. Además, 
             participé en labores de mantenimiento de equipos para garantizar su óptimo funcionamiento.
             Esta experiencia me permitió fortalecer mis habilidades en gestión documental y mantenimiento de sistemas."
-            
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
         </div>
           <MyKnoledgeList />
@@ -84,6 +92,8 @@ const App: React.FC = () => {
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg' },
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg' },
           ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         />
         <Experience
           link="https://github.com/chiwaka03/Login-Page"
@@ -99,6 +109,8 @@ const App: React.FC = () => {
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
             { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg' },
           ].map(image => ({ ...image, alt: generateAlt(image.src) }))}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         />
         </div>
         <PortfolioExplain/> 
