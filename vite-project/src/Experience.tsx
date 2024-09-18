@@ -8,8 +8,6 @@ interface ExperienceProps {
   date?: string;
   description: string;
   image?: { src: string; alt?: string }[]; // Array de objetos con src y alt opcional
-  onMouseEnter?: () => void;
-  onMouseLeave?: () => void;
 }
 
 const Experience: React.FC<ExperienceProps> = ({
@@ -19,15 +17,9 @@ const Experience: React.FC<ExperienceProps> = ({
   date,
   description,
   image,
-  onMouseEnter,
-  onMouseLeave,
 }) => {
   return (
-    <div
-      className='project-card'
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <div className='project-card'>
       <h2 className='centered-text'>{title}</h2>  
       <a href={link} target="_blank" rel="noopener noreferrer" className="no-style">
         <div className='text-project-card'>
