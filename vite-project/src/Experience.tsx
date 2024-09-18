@@ -20,8 +20,8 @@ const Experience: React.FC<ExperienceProps> = ({
 }) => {
   return (
     <div className='project-card'>
-      <h2 className='centered-text'>{title}</h2>
-      <a href={link} target="_blank" className="no-style">
+      <h2 className='centered-text'>{title}</h2>  
+      <a href={link} target="_blank" rel="noopener noreferrer" className="no-style">
         <div className='text-project-card'>
           <h3>{position} <span>&#8599;</span></h3>
           <h4>{date}</h4>
@@ -47,3 +47,8 @@ const Experience: React.FC<ExperienceProps> = ({
 };
 
 export default Experience;
+
+{/* El atributo rel="noopener noreferrer" evita que la página
+enlazada pueda acceder al objeto window.opener, mejorando la
+seguridad al prevenir ataques de tipo phishing o manipulación
+del contenido de la página original */}

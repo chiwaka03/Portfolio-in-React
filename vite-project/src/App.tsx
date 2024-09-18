@@ -9,15 +9,16 @@ import MyKnoledgeList from './MyKnowledgeList.tsx';
 
 
 const App: React.FC = () => {
+
   const generateAlt = (src: string): string => {
     const filename = src.substring(src.lastIndexOf('/') + 1, src.lastIndexOf('.'));
     return filename.replace(/[-_]/g, ' ');
   };
 
   return (
-    <div className='first-part'>
+    <div className="first-part">
       <div className='half-1'>
-          <Body />
+        <Body />
         <SocialButtons />
       </div>
       
@@ -66,7 +67,6 @@ const App: React.FC = () => {
             realizando copias físicas y almacenamiento en la nube. Además, 
             participé en labores de mantenimiento de equipos para garantizar su óptimo funcionamiento.
             Esta experiencia me permitió fortalecer mis habilidades en gestión documental y mantenimiento de sistemas."
-            
           />
         </div>
           <MyKnoledgeList />
